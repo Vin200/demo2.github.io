@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ABOUT US</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="index.html"><img src="1Stop.png" width="150"></a>
+      </div>
+      <div class="nav_side">
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Conatcts</a>
+        <a href="login.html">Login/Register</a>
+      </div>
+    </nav>
+    <div class="about_us">
+      <h2>About Us</h2>
+      <div class="about_content">
+        <p>Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales
+           Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales
+           Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales  Duis pretium non ex finibus sodales
+         Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales </p>
+      </div>
+      <hr>
+      <h2>Our Mission</h2>
+      <p>Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales
+         Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales
+         Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales  Duis pretium non ex finibus sodales
+       Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales Duis pretium non ex finibus sodales </p>
+    </div>
+    <div class="feedback">
+      <h2>WRITE A REVIEW</h2>
+      <div class="feedback_form">
+        <form name="submit-googlesheet" method="post">
+          <input type="text" name="Name" placeholder="Name"><br>
+          <input type="email" name="Email" placeholder="Email ID"><br>
+          <input type="number" name="Number" placeholder="Conatct Number"><br>
+          <textarea rows="5" cols="7" name="Review" placeholder="Write your Review"></textarea><br>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <a href="#"><img src="1stop.png" width="200px"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="">Services</a>|
+            <a href="">About Us</a>|
+            <a href="">Login</a>|
+            <a href="">Sign Up</a>
+
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of Use</a>|
+            <a href="">Refound Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/"><img src="facebook-brands.svg" width="30px" height="30px"></a>
+            <a href="https://www.linkedin.com/"><img src="linkedin-brands.svg" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/"><img src="instagram-brands.svg" width="30px" height="30px"></a>
+            <a href="https://twitter.com/"><img src="twitter-brands.svg" width="30px" height="30px"></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.WhatsApp.com/send/phone: +919945406637"><img src="whatsapp-brands.svg" width="30px" height="30px"></a>
+            <a href="tel: +919945406637"><img src="phone-square-alt-solid.svg" width="30px" height="30px"></a>
+            <a href="mailto:vinayakvinayak627@gmail.com"><img src="envelope-regular.svg" width="30px" height="30px"></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2022 Projects.VI All rights Reserved</p>
+    </footer>
+
+<script type="text/javascript">
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyv84arnZ7ootpKldsEfQBWGQLW-F2eVVJ3shj8G45SBmfrMuCIDHHBdraCrEevAJ--aQ/exec'
+            const form = document.forms['submit-googlesheet']
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank You for your review.."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+</body>
+</html>
